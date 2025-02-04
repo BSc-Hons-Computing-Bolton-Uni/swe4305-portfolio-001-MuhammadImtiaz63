@@ -1,6 +1,7 @@
 package Logbook.Week1;
 import java.util.Scanner;
 
+
 public class MainTask8 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);

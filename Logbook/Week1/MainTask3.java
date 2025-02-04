@@ -1,6 +1,7 @@
 package Logbook.Week1;
 import java.util.Scanner;
 
+
 public class MainTask3 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +15,5 @@ public class MainTask3 {
 
         System.out.println("Perimeter: " + perimeter);
         System.out.println("Area: " + area);
-
     }
 }
