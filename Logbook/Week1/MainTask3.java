@@ -14,5 +14,6 @@ public class MainTask3 {
 
         System.out.println("Perimeter: " + perimeter);
         System.out.println("Area: " + area);
+
     }
 }
