@@ -86,7 +86,7 @@ class Student {
         this.name = name;
         this.course = course;
 
-        // Assign random marks to each module
+
         Random random = new Random();
         for (int i = 0; i < marks.length; i++) {
             marks[i] = random.nextInt(101);  // Random mark between 0 and 100
