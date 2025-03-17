@@ -78,7 +78,7 @@ class Course {
 class Student {
     private int ID;
     private String name;
-    private int[] marks = new int[4];  // Array to store marks
+    private int[] marks = new int[4];
     private Course course;
 
     public Student(int ID, String name, Course course) {
@@ -89,14 +89,14 @@ class Student {
 
         Random random = new Random();
         for (int i = 0; i < marks.length; i++) {
-            marks[i] = random.nextInt(101);  // Random mark between 0 and 100
+            marks[i] = random.nextInt(101);
         }
     }
 
     public void print() {
         System.out.println("Student ID: " + ID);
         System.out.println("Student Name: " + name);
-        System.out.println("Course: " + course.getModules().get(0).getName()); // Just print the course name
+        System.out.println("Course: " + course.getModules().get(0).getName());
         System.out.println("Modules and Marks:");
         ArrayList<Module> modules = course.getModules();
         for (int i = 0; i < modules.size(); i++) {
