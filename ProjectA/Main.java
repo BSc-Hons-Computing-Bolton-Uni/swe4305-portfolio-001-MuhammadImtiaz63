@@ -71,7 +71,7 @@ class MusicApp {
     // Display menu and get user choice
     private static int getMenuChoice() {
         System.out.println("""
-              \n==  Music Streaming App  ==
+              \n= Music Streaming App =
               1. Add a new song
               2. Remove a song
               3. Show all songs
@@ -143,4 +143,3 @@ class MusicApp {
         return scanner.nextLine().trim();
     }
 }
-
