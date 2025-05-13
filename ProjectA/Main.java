@@ -143,3 +143,4 @@ class MusicApp {
         return scanner.nextLine().trim();
     }
 }
+
