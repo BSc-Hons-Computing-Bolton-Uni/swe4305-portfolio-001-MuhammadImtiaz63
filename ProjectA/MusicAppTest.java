@@ -25,8 +25,8 @@ public class MusicAppTest {
         songList.add(song3);
     }
 
-    //  Song class tests
-
+    // Song class tests
+    // Test Song constructor and getters
     @Test
     void testSongConstructorAndGetters() {
         Song song = new Song("Taylor Swift", "Love Story", 100);
@@ -35,20 +35,21 @@ public class MusicAppTest {
         assertEquals(100, song.getPlayCount());
     }
 
+    // Test increasing play count of a song
     @Test
     void testIncreasePlayCount() {
         song1.increasePlayCount();
         assertEquals(11, song1.getPlayCount());
     }
 
+    // Test Song toString method
     @Test
     void testToString() {
         String expected = "Song A by Artist A | Plays: 10";
         assertEquals(expected, song1.toString());
     }
 
-    // MusicApp class tests
-
+    // Test removing a song by title when it exists
     @Test
     void testRemoveSongByTitleExists() {
         boolean removed = songList.removeIf(song -> song.getTitle().equalsIgnoreCase("Song B"));
@@ -56,6 +57,8 @@ public class MusicAppTest {
         assertEquals(2, songList.size());
     }
 
+    // MusicApp class tests
+    // Test removing a song by title when it does not exist
     @Test
     void testRemoveSongByTitleNotExists() {
         boolean removed = songList.removeIf(song -> song.getTitle().equalsIgnoreCase("Nonexistent"));
@@ -63,6 +66,7 @@ public class MusicAppTest {
         assertEquals(3, songList.size());
     }
 
+    // Test filtering songs by minimum play count
     @Test
     void testFilterSongsByPlayCount() {
         int minPlays = 10;
@@ -77,6 +81,7 @@ public class MusicAppTest {
         assertTrue(filtered.contains(song3));
     }
 
+    // Test behavior of an empty song list
     @Test
     void testEmptySongList() {
         ArrayList<Song> emptyList = new ArrayList<>();
